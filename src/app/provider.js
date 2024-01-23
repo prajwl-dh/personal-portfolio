@@ -13,5 +13,9 @@ export default function Providers({ children }) {
     return null
   }
 
-  return <ThemeProvider attribute='class'>{children}</ThemeProvider>
+  return (
+    <ThemeProvider disableTransitionOnChange attribute='class'>
+      {children}
+    </ThemeProvider>
+  )
 }
