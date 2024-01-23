@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className='border border-blue-500 w-full h-14 md:w-9/12 md:max-w-screen-xl self-center mt-auto'>Footer</div>
+    <div className='w-full h-14 self-center mt-auto flex'>
+      <p className='flex flex-col bg-neutral-800 text text-yellow-50 dark:bg-yellow-50 dark:text-neutral-800 w-full justify-center items-center font-bold'>©2024 #Portfolio - Prajwal Dhungana</p>
+    </div>
   )
 }

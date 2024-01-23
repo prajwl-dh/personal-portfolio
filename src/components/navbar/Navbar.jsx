@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <div className='flex flex-row justify-between h-16 p-10 items-center w-screen'>
-      <Link href='/'><p className={`${pathName === '/' ? 'text-gray-800 underline decoration-4 underline-offset-8 dark:text-yellow-200' : null} text text-gray-500 dark:text-yellow-50 hover:cursor-pointer font-bold text-2xl transition duration-300 ease-in-out hover:-translate-y-0.5`}>#prajwl-dh</p></Link>
+      <Link href='/'><p className={`${pathName === '/' ? 'text-gray-500 underline decoration-4 underline-offset-8 dark:text-yellow-200' : null} text text-gray-500 dark:text-yellow-50 hover:cursor-pointer font-bold text-2xl transition duration-300 ease-in-out hover:-translate-y-0.5`}>#prajwl-dh</p></Link>
       <div className='flex flex-row gap-10 text-gray-500 dark:text-yellow-50 text-lg hover:cursor-pointer font-bold items-center'>
         <Link className={`hover:text-gray-800 hover:underline dark:hover:text-yellow-200 ${pathName === '/about' ? 'text-gray-800 underline decoration-4 underline-offset-4 dark:text-yellow-200' : null}`} href='/about'>About</Link>
         <Link className={`hover:text-gray-800 hover:underline dark:hover:text-yellow-200 ${pathName === '/projects' ? 'text-gray-800 underline decoration-4 underline-offset-4 dark:text-yellow-200' : null}`} href='/projects'>Projects</Link>
