@@ -25,7 +25,7 @@ export default function Navbar() {
   }
 
   return (
-    <motion.div initial={{opacity:0, y:-10}} animate={{opacity: 1, y:0}} transition={{delay:0.3, type: "spring"}} className={isNavOpen? 'shadow-md' : null}>
+    <motion.div initial={{opacity:0, y:-10}} animate={{opacity: 1, y:0}} transition={{delay:0.3, type: "spring"}} className={`${isNavOpen? 'shadow-md' : null}`}>
       <div className={`flex flex-row justify-between h-16 px-3 md:p-10 items-center w-screen ${isNavOpen ? null: 'shadow-md'}`}>
         <Link href='/'><p className={`${pathName === '/' ? 'text-gray-500 underline decoration-4 underline-offset-8 dark:text-yellow-200' : null} text text-gray-500 dark:text-yellow-50 hover:cursor-pointer font-bold text-2xl`}>#prajwl-dh</p></Link>
         <div className='flex flex-row gap-5 md:gap-10 text-gray-500 dark:text-yellow-50 text-lg font-bold items-center'>
