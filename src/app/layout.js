@@ -3,6 +3,7 @@ import './globals.css'
 import Footer from '@/components/footer/Footer'
 import Providers from './provider'
 import { Inter } from 'next/font/google'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const inter = Inter({ subsets: ['latin'] })
 
