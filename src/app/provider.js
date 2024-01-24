@@ -14,7 +14,11 @@ export default function Providers({ children }) {
   }
 
   return (
-    <ThemeProvider disableTransitionOnChange attribute='class'>
+    <ThemeProvider
+      disableTransitionOnChange
+      defaultTheme='dark'
+      attribute='class'
+    >
       {children}
     </ThemeProvider>
   )
