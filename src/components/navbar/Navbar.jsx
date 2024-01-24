@@ -25,7 +25,7 @@ export default function Navbar() {
   }
 
   return (
-    <motion.div initial={{opacity:0, y:-10}} animate={{opacity: 1, y:0}} transition={{delay:0.1, type: "spring"}} className={isNavOpen? 'shadow-md' : null}>
+    <motion.div initial={{opacity:0, y:-10}} animate={{opacity: 1, y:0}} transition={{delay:0.3, type: "spring"}} className={isNavOpen? 'shadow-md' : null}>
       <div className={`flex flex-row justify-between h-16 px-3 md:p-10 items-center w-screen ${isNavOpen ? null: 'shadow-md'}`}>
         <Link href='/'><p className={`${pathName === '/' ? 'text-gray-500 underline decoration-4 underline-offset-8 dark:text-yellow-200' : null} text text-gray-500 dark:text-yellow-50 hover:cursor-pointer font-bold text-2xl`}>#prajwl-dh</p></Link>
         <div className='flex flex-row gap-5 md:gap-10 text-gray-500 dark:text-yellow-50 text-lg font-bold items-center'>
@@ -42,7 +42,7 @@ export default function Navbar() {
         </div>
       </div>
       {
-        <motion.div initial={{opacity: 0}} animate={isNavOpen? { opacity: 1 } : {opacity: 0}} transition={{ delay: 0.01, type: "spring"}} className={`md:hidden ${isNavOpen ? null : 'hidden'} flex flex-col mx-3 mb-3 bg-yellow-50 dark:bg-neutral-800 min-h-20 text-gray-500 dark:text-yellow-50 text-xl font-bold items-center divide-none`}>
+        <motion.div initial={{opacity: 0, y:-10}} animate={isNavOpen? { opacity: 1, y:0 } : {opacity: 0, y: -10}} transition={{ delay: 0.1, type: "spring"}} className={`md:hidden ${isNavOpen ? null : 'hidden'} flex flex-col mx-3 mb-3 bg-yellow-50 dark:bg-neutral-800 min-h-20 text-gray-500 dark:text-yellow-50 text-xl font-bold items-center divide-none`}>
             <Link className={`md:hidden mb-2 hover:text-gray-800 dark:hover:text-yellow-200 ${pathName === '/about' ? 'text-gray-800 underline decoration-4 underline-offset-4 dark:text-yellow-200 hover:cursor-pointer' : null}`} href='/about'>About</Link>
             <Link className={`md:hidden mb-2 hover:text-gray-800 dark:hover:text-yellow-200 ${pathName === '/projects' ? 'text-gray-800 underline decoration-4 underline-offset-8 dark:text-yellow-200 hover:cursor-pointer' : null}`} href='/projects'>Projects</Link>
             <Link className={`md:hidden mb-5 hover:text-gray-800 dark:hover:text-yellow-200 ${pathName === '/contact' ? 'text-gray-800 underline decoration-4 underline-offset-4 dark:text-yellow-200 hover:cursor-pointer' : null}`} href='/contact'>Contact</Link>
