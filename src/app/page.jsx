@@ -26,7 +26,7 @@ export default function Home() {
           <Image className="h-[400px] w-[400px] md:h-[400px] md:w-[600px] max-w-[400px]" src={'/prajwal.png'} alt="" height={100} width={100} loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
         </div>
       </motion.div>
-      <ScrollToTop smooth top="100" width="40" height="30" style={{marginBottom: "40px", backgroundColor: "#fefce8", outline: "4px white solid", borderRadius: "50%"}}/>
+      <ScrollToTop smooth top="200" width="40" height="30" style={{marginBottom: "40px", backgroundColor: "#fefce8", outline: "4px white solid", borderRadius: "50%"}}/>
     </>
   ) 
 }
