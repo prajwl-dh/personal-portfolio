@@ -2,34 +2,39 @@
 
 import React from 'react'
 import ScrollToTop from 'react-scroll-to-top'
-import { motion, useScroll, useSpring } from "framer-motion";
 
 export default function About() {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001
-  });
-
   return (
     <>
-      <motion.div className="progress-bar" style={{ scaleX }} />
       <div className='w-full md:w-9/12 md:max-w-screen-xl self-center'>
-        <p className='text text-gray-600 dark:text-yellow-50 text-2xl pt-10 px-10'>
-          Hello! I&#39;m Prajwal Dhungana, a Frontend Developer based in Grand Prairie, TX. My passion for technology manifests through my expertise in the MERN stack, alongside skills in Next.js, React, JavaScript, and Tailwind CSS. These tools are my paintbrush for the digital canvas of the web.
-        </p>
-        <p className='text text-gray-600 dark:text-yellow-50 text-2xl pt-10 px-10'>
-          During my academic tenure at McNeese State University, I had the thrilling opportunity to contribute to a NASA-funded LaSpace Rover Project. This experience not only honed my technical skills but also fueled my curiosity and ambition. My educational journey in computer science laid the foundation for my career, blending theory with practical, hands-on experience.
-        </p>
-        <p className='text text-gray-600 dark:text-yellow-50 text-2xl pt-10 px-10'>
-          When I&#39;m not coding, you can find me on the soccer field. Playing soccer has been a vital part of my life, teaching me the importance of teamwork, strategy, and resilience. These skills transcend the field and resonate deeply in my professional life.
-        </p>
-        <p className='text text-gray-600 dark:text-yellow-50 text-2xl pt-10 px-10'>
-        Swimming is another pursuit that keeps me balanced. It&#39;s not just a physical exercise for me; it&#39;s a practice in discipline, focus, and pushing personal boundaries. These qualities mirror in my approach to tackling complex tech challenges.
-        </p>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-10 text text-gray-500 dark:text-yellow-50 text-md md:text-lg p-5 mb-20 md:mt-10 md:p-0'>
+          <p className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 rounded-sm shadow-2xl'>
+            <span className='text font-bold'>Hi!</span><br/><br/> I&#39;m <span className='text text-red-400'>Prajwal Dhungana</span>, a passionate Frontend Developer from Grand Prairie, TX, deeply engaged in the dynamic world of web development with a strong foundation in the MERN stack, alongside Next.js and Tailwind CSS.
+          </p>
+          <p className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 rounded-sm shadow-2xl'>
+            <span className='text text-blue-500'>Professional experience:<br/><br/></span>
+            <ul>
+              <li><span className='text text-red-400'>American Tracking Services</span><br/><span className='text italic'>Frontend Engineer, Present</span><br/><br/></li>
+              <li><span className='text text-red-400'>Optum</span><br/>Frontend Engineer (2021-2022)<br/><br/></li>
+              <li><span className='text text-red-400'>Northern Trust</span><br/>Frontend Developer (2019-2021)</li>
+            </ul>
+          </p>
+          <p className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 rounded-sm shadow-2xl'>
+            <span className='text text-blue-500'>Education : <br/><br/></span>
+            <span className='text italic text-red-400'>Bachelors In Computer Science</span><br/>
+            McNeese State University<br/> Lake Charles<br/>Louisiana<br/><br/>
+          </p>
+          <p className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 rounded-sm shadow-2xl'>
+            As a self-taught learner, I dedicate myself to mastering new technologies and methodologies every day, ensuring my skills are both current and versatile. Soccer, a personal passion, has taught me the value of teamwork, strategic thinking, and resilience qualities that I seamlessly integrate into my professional endeavors.
+            development.
+          </p>
+          <p className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 rounded-sm shadow-2xl'>
+            Driven by curiosity and a relentless pursuit of excellence, I am committed to crafting intuitive and impactful digital experiences, continually pushing the boundaries of what&#39;s possible in web development.
+          </p>
+          
+        </div>
       </div>
-      <ScrollToTop smooth top="200" width="40" height="30" style={{marginBottom: "40px", backgroundColor: "#fefce8", outline: "4px white solid", borderRadius: "50%", cursor: "pointer"}}/>
+      <ScrollToTop smooth top="150" width="40" height="30" style={{marginBottom: "40px", backgroundColor: "#fefce8", outline: "4px white solid", borderRadius: "50%", cursor: "pointer"}}/>
     </>
   )
 }

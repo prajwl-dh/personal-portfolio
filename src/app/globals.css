@@ -2,12 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8a8a8a #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #8a8a8a;
+    border-radius: 10px;
+    border: 1px solid transparent;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
 @layer base {
     html {
         @apply m-0 p-0 scroll-smooth;
     }
 
     body {
-        @apply flex flex-col justify-between min-h-screen bg-yellow-50 dark:bg-neutral-800 dark:text-white;
+        @apply flex flex-col justify-between min-h-screen bg-yellow-50 dark:bg-neutral-800 dark:text-white antialiased;
     }
 }
