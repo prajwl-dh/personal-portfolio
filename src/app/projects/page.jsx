@@ -17,7 +17,7 @@ export default function Projects() {
             <button className='text underline text-gray-500'>Clear Filters</button>
           </div>
           <div className='mt-5 w-full border border-red-500 min-h-screen p-5'>
-            {projectsElement}
+            Projects here
           </div>
         </div>
       </div>
