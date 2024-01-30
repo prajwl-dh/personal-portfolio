@@ -10,7 +10,7 @@ export default function Home() {
 
   return(
     <>
-      <motion.div initial={{y:50, opacity: 0}} animate={{y:0, opacity:1}} transition={{duration: 2, type:"spring"}} className=' min-h-[80vh] w-full h-max md:w-9/12 md:max-w-screen-xl self-center grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-0 justify-items-center place-content-start md:place-content-center place-items-center'>
+      <motion.div initial={{y:50, opacity: 0}} animate={{y:0, opacity:1}} transition={{duration: 2, type:"spring"}} className=' min-h-[80vh] w-full h-max md:w-9/12 md:max-w-screen-xl self-center grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-0 justify-items-center place-content-start md:place-content-center place-items-center mt-5 md:mt-0'>
         <div className="flex flex-col order-last md:-order-none place-self-center relative md:top-10">
           <p className="text text-gray-500 dark:text-yellow-50 text-xl">Hello,</p>
           <p className="text text-gray-700 dark:text-yellow-50 text-2xl sm:text-3xl font-bold mt-3">I&apos;m Prajwal Dhungana</p>

@@ -31,7 +31,7 @@ export default function Projects() {
             <button className='border-2 border-gray-500 text-gray-500 dark:border-yellow-50 dark:text-yellow-50 h-8 min-w-24 rounded-md'>Robotics</button>
             <button className='text underline text-gray-500 dark:text-yellow-50'>Clear Filters</button>
           </div>
-          <div className='mt-0 md:mt-10 w-full p-5 md:p-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 text-gray-500 dark:text-yellow-50'>
+          <div className='mt-0 md:mt-10 w-full p-5 md:p-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-5 text-gray-500 dark:text-yellow-50'>
             {allProjects}
           </div>
         </div>
