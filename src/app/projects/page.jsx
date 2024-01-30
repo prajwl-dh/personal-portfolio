@@ -2,8 +2,30 @@
 import React from 'react'
 import ScrollToTop from 'react-scroll-to-top'
 import githubProjects from '@/data/data'
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Projects() {
+  const shuffleArray = githubProjects.sort((a, b) => 0.5 - Math.random())
+
+  const allProjects = shuffleArray.map((project) => {
+    let gridStyle = ''
+    if(project.type === 'web'){
+      gridStyle = 'bg-blue-400 dark:bg-cyan-600'
+    }else if(project.type === 'game'){
+      gridStyle = 'bg-emerald-400 dark:bg-emerald-400'
+    }else if(project.type === 'robotics'){
+      gridStyle = 'bg-yellow-300 dark:bg-yellow-400'
+    }else{
+      gridStyle = 'bg-rose-400 dark:bg-rose-700'
+    }
+
+    return(
+      <div className={`flex border-gray-700 p-5 ${gridStyle} dark:border-yellow-50 rounded-2xl shadow-xl h-60 items-center justify-center text-center`} key={uuidv4()}>
+        <div className='text font-bold text-3xl text-gray-500 dark:text-yellow-50'><q>{project.name}</q></div>
+      </div>
+    )
+  })
+
   return(
     <>
       <div className='w-full md:w-9/12 md:max-w-screen-xl self-center flex flex-col p-5 md:mt-5 md:p-0 mb-10'>
@@ -16,8 +38,8 @@ export default function Projects() {
             <button className='border-2 border-gray-400 text-gray-500 h-8 min-w-20 rounded-md'>AI</button>
             <button className='text underline text-gray-500'>Clear Filters</button>
           </div>
-          <div className='mt-5 w-full border border-red-500 min-h-screen p-5'>
-            Projects here
+          <div className='mt-5 md:mt-10 w-full p-5 md:p-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+            {allProjects}
           </div>
         </div>
       </div>
