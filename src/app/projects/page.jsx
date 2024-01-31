@@ -34,7 +34,7 @@ export default function Projects() {
     <>
       <div className='w-full md:w-9/12 md:max-w-screen-xl self-center flex flex-col p-5 md:mt-10 md:p-0 mb-10'>
         <motion.p initial={{ opacity: 0, y:0 }} whileInView={{ opacity: 1, y:0 }} transition={{duration: 2, type:"spring"}} className='text text-2xl md:text-3xl font-bold text-gray-500 dark:text-yellow-50 mb-5'>Explore my personal projects</motion.p>
-        <div className='w-full min-h-screen'>
+        <div className='w-full'>
           <motion.div initial={{ opacity: 0, y:0 }} whileInView={{ opacity: 1, y:0 }} transition={{duration: 2, type:"spring"}} className='flex flex-row md:gap-5 gap-3 flex-wrap md:mt-2 text font-bold'>
             <button onClick={() => router.push(pathname + '?' + createQueryString('type', 'web'))} className={`${searchParams.get('type') === 'web'? 'bg-gray-600 text-yellow-50 border-0 dark:bg-yellow-50 dark:text-neutral-700' : 'border-2 border-gray-500 text-gray-500 dark:border-yellow-50 dark:text-yellow-50'} h-8 min-w-24 rounded-lg`}>Web</button>
             <button onClick={() => router.push(pathname + '?' + createQueryString('type', 'game'))} className={`${searchParams.get('type') === 'game'? 'bg-gray-600 text-yellow-50 border-0 dark:bg-yellow-50 dark:text-neutral-700' : 'border-2 border-gray-500 text-gray-500 dark:border-yellow-50 dark:text-yellow-50'} h-8 min-w-24 rounded-lg`}>Games</button>
