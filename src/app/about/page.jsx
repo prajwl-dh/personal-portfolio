@@ -48,10 +48,10 @@ export default function About() {
             <span className='text text-red-400'>Sports: </span>Soccer, Table Tennis, Swimming<br/>
             <span className='text text-red-400'>Soft skills: </span>Public speaking, Communication, Leadership, Teamwork, Collaboration<br/>
           </motion.span>
-          <motion.span initial={{ opacity: 0, y:10 }} whileInView={{ opacity: 1, y:0 }} transition={{duration: 2, type:"spring"}} className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl'>
+          <motion.a onClick={() => router.push('/projects')} initial={{ opacity: 0, y:10 }} whileInView={{ opacity: 1, y:0 }} transition={{duration: 2, type:"spring"}} className='text cursor-pointer font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl'>
             <span className='text text-blue-500 text-xl'>Personal Projects : </span><br/><br/>
-            <div className='flex flex-row justify-center'><motion.button whileHover={{scale: 1.050}} onHoverStart={e => {}} onHoverEnd={e => {}} transition={{duration: 0.5, type:"spring"}} className='h-14 w-60 bg-gray-700 dark:bg-yellow-50 text text-yellow-50 dark:text-gray-700 font-bold text-2xl outline-none rounded-lg' onClick={() => router.push('/projects')}>Click Here</motion.button></div>
-          </motion.span>
+            <span className='flex flex-row justify-center'><motion.button whileHover={{scale: 1.050}} onHoverStart={e => {}} onHoverEnd={e => {}} transition={{duration: 0.5, type:"spring"}} className='h-14 w-60 bg-gray-700 dark:bg-yellow-50 text text-yellow-50 dark:text-gray-700 font-bold text-2xl outline-none rounded-lg' onClick={() => router.push('/projects')}>Click Here</motion.button></span>
+          </motion.a>
         </div>
       </div>
       <ScrollToTop smooth top="150" width="40" height="30" style={{marginBottom: "40px", backgroundColor: "#fefce8", outline: "4px white solid", borderRadius: "50%", cursor: "pointer"}}/>
