@@ -30,6 +30,17 @@ export default function Projects() {
     )
   })
 
+  const moreOnGithub = (
+    <motion.a initial={{ opacity: 0, y:10 }} whileInView={{ opacity: 1, y:0 }} transition={{duration: 2, type:"spring"}} href='https://github.com/prajwl-dh?tab=repositories' target="_blank" key={uuidv4()}>
+      <div className={`flex flex-col text font-bold border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl min-h-60 items-center justify-center text-center`}>
+        <div className='text font-bold text-3xl mb-5'><q>Explore more on Github</q></div>
+        <div className='flex flex-row justify-center'><motion.button whileHover={{scale: 1.050}} onHoverStart={e => {}} onHoverEnd={e => {}} transition={{duration: 0.5, type:"spring"}} className='h-14 w-40 md:w-60 bg-gray-700 dark:bg-yellow-50 text text-yellow-50 dark:text-gray-700 font-bold text-2xl outline-none rounded-lg text-center p-3'>Click Here</motion.button></div>
+      </div>
+      </motion.a>
+  )
+
+  allProjects.push(moreOnGithub)
+
   return(
     <>
       <div className='w-full md:w-9/12 md:max-w-screen-xl self-center flex flex-col p-5 md:mt-10 md:p-0 mb-10'>
