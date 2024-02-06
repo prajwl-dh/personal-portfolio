@@ -10,7 +10,7 @@ export default function Home() {
 
   return(
     <>
-      <motion.div initial={{y:50, opacity: 0}} animate={{y:0, opacity:1}} transition={{duration: 2, type:"spring"}} className=' min-h-[80vh] w-full h-max md:w-9/12 md:max-w-screen-xl self-center grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-0 justify-items-center place-content-start md:place-content-center place-items-center mt-5 md:mt-0'>
+      <motion.div initial={{y:50, opacity: 0}} animate={{y:0, opacity:1}} transition={{duration: 2, type:"spring"}} className=' min-h-[80vh] w-full h-max md:w-9/12 md:max-w-screen-xl self-center grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-0 justify-items-center place-content-start md:place-content-center place-items-center md:mt-0'>
         <div className="flex flex-col order-last md:-order-none place-self-center relative md:top-10">
           <p className="text text-gray-500 dark:text-yellow-50 text-xl">Hello,</p>
           <p className="text text-gray-700 dark:text-yellow-50 text-2xl sm:text-3xl font-bold mt-3">I&apos;m Prajwal Dhungana</p>
@@ -22,9 +22,10 @@ export default function Home() {
             <motion.a whileHover={{scale: 1.050}} onHoverStart={e => {}} onHoverEnd={e => {}} transition={{duration: 0.5, type:"spring"}} href="https://github.com/prajwl-dh" target="_blank"><svg className={`cursor-pointer`} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4.44c-.32-.07-.33-.68-.33-.89l.01-2.47c0-.84-.29-1.39-.61-1.67c2.01-.22 4.11-.97 4.11-4.44c0-.98-.35-1.79-.92-2.42c.09-.22.4-1.14-.09-2.38c0 0-.76-.23-2.48.93c-.72-.2-1.48-.3-2.25-.31c-.76.01-1.54.11-2.25.31c-1.72-1.16-2.48-.93-2.48-.93c-.49 1.24-.18 2.16-.09 2.38c-.57.63-.92 1.44-.92 2.42c0 3.47 2.1 4.22 4.1 4.47c-.26.2-.49.6-.57 1.18c-.52.23-1.82.63-2.62-.75c0 0-.48-.86-1.38-.93c0 0-.88 0-.06.55c0 0 .59.28 1 1.32c0 0 .52 1.75 3.03 1.21l.01 1.53c0 .21-.02.82-.34.89H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="currentColor"/></svg></motion.a>
           </div>
         </div>
-        <div className="place-self-center saturate-100 m-0 bg-yellow-300 rounded-[50%]">
-          <Image className="h-[400px] w-[400px] md:h-[400px] md:w-[600px] max-w-[400px]" src={'/prajwal.png'} alt="" height={100} width={100} loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
-        </div>
+        <>
+          <Image className="p-10 md:p-0 w-fit h-fit stroke dark:hidden" src={'/light.svg'} alt="" height={800} width={800} />
+          <Image className="p-10 md:p-0 w-fit h-fit stroke hidden dark:block" src={'/dark.svg'} alt="" height={800} width={800} />
+        </>
       </motion.div>
       <ScrollToTop smooth top="200" width="40" height="30" style={{marginBottom: "40px", backgroundColor: "#fefce8", outline: "4px white solid", borderRadius: "50%", cursor: "pointer"}}/>
     </>
