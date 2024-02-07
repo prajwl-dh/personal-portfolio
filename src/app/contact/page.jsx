@@ -4,6 +4,7 @@ import ScrollToTop from 'react-scroll-to-top';
 import { motion } from 'framer-motion';
 
 export default function Contact() {
+  //ToDo: Create a contacts page with contact form, image, and links to social plus resume
   return (
     <>
       <div className='w-full md:w-9/12 md:max-w-screen-xl self-center'>
