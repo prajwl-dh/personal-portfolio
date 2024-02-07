@@ -146,9 +146,6 @@ export default function Navbar() {
           } flex flex-col mx-3 mb-3 bg-yellow-50 dark:bg-neutral-800 min-h-20 text-gray-500 dark:text-yellow-50 text-xl font-bold items-center`}
         >
           <Link
-            onClick={() => {
-              setIsNavOpen(false);
-            }}
             className={`md:hidden ${
               isNavOpen ? null : 'hidden'
             } mb-2 hover:text-gray-800 dark:hover:text-yellow-200 ${
@@ -161,9 +158,6 @@ export default function Navbar() {
             About
           </Link>
           <Link
-            onClick={() => {
-              setIsNavOpen(false);
-            }}
             className={`md:hidden ${
               isNavOpen ? null : 'hidden'
             } mb-2 hover:text-gray-800 dark:hover:text-yellow-200 ${
@@ -176,9 +170,6 @@ export default function Navbar() {
             Projects
           </Link>
           <Link
-            onClick={() => {
-              setIsNavOpen(false);
-            }}
             className={`md:hidden ${
               isNavOpen ? null : 'hidden'
             } mb-5 hover:text-gray-800 dark:hover:text-yellow-200 ${
