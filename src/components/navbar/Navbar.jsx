@@ -44,10 +44,10 @@ export default function Navbar() {
       <AnimatePresence>
         {isNavOpen && (
           <motion.div
-            initial={{ maxHeight: 0, opacity: 0, y: -10 }}
-            animate={{ maxHeight: 400, opacity: 1, y: 0 }}
-            exit={{ maxHeight: 0, opacity: 0, y: -10 }}
-            transition={{duration: 0.5}}
+            initial={{ opacity: 0, y:-10}}
+            animate={{ opacity: 1, y: 0}}
+            exit={{ opacity: 0, y:-10 }}
+            transition={{duration: 0.3}}
             className="md:hidden flex flex-col mx-3 mb-3 bg-yellow-50 dark:bg-neutral-800 text-gray-500 dark:text-yellow-50 text-xl font-bold items-center"
           >
             <Link onClick={() => {setIsNavOpen(false)}} className="mb-2 hover:text-gray-800 dark:hover:text-yellow-200" href='/about'>About</Link>
