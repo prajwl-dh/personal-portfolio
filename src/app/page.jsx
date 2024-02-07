@@ -23,8 +23,8 @@ export default function Home() {
           </div>
         </div>
         <>
-          <Image className="p-10 md:p-0 w-fit h-fit stroke dark:hidden" src={'/light.svg'} alt="" height={800} width={800} />
-          <Image className="p-10 md:p-0 w-fit h-fit stroke hidden dark:block" src={'/dark.svg'} alt="" height={800} width={800} />
+          <Image className="p-10 md:p-0 w-fit h-fit stroke dark:hidden" src={'/landingLight.svg'} alt="" height={800} width={800} />
+          <Image className="p-10 md:p-0 w-fit h-fit stroke hidden dark:block" src={'/landingDark.svg'} alt="" height={800} width={800} />
         </>
       </motion.div>
       <ScrollToTop smooth top="200" width="40" height="30" style={{marginBottom: "40px", backgroundColor: "#fefce8", outline: "4px white solid", borderRadius: "50%", cursor: "pointer"}}/>
