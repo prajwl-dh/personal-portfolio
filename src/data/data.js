@@ -63,6 +63,13 @@ const githubProjects = [
       'An object detection program written in Python using OpenCV that can detect multi-colored squared foam cubes and draw a border around them',
   },
   {
+    name: 'LaSpace NASA Funded Rovers',
+    type: 'robotics',
+    link: 'https://youtu.be/quAcbgUL_YU?si=eaBK-mf-6xwyslid',
+    description:
+      'NASA Funded Robotics Project during my time at McNeese State University. We created three autonomous rovers with navigation and communication capabilities',
+  },
+  {
     name: '4WD Robot',
     type: 'robotics',
     link: 'https://github.com/prajwl-dh/myYahboomRobot',
