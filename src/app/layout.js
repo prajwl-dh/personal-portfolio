@@ -1,15 +1,17 @@
-import Navbar from '@/components/navbar/Navbar';
-import './globals.css';
 import Footer from '@/components/footer/Footer';
-import Providers from './provider';
-import { Inter } from 'next/font/google';
+import Navbar from '@/components/navbar/Navbar';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import Providers from './provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Prajwal's Portfolio",
-  description: 'Created using React.js, Next.js, and TailwindCSS',
+  title:
+    'Prajwal Dhungana - Frontend Engineer & Web Developer | Grand Prairie, TX',
+  description:
+    "Meet Prajwal Dhungana, a dedicated Frontend Engineer based in Grand Prairie, TX, specializing in the MERN stack, Next.js, and Tailwind CSS. With a self-taught background, Prajwal is committed to continuous learning, ensuring his web development skills are both cutting-edge and versatile. Explore Prajwal's portfolio to discover innovative web solutions that blend modern design with functional excellence.",
 };
 
 export default function RootLayout({ children }) {
@@ -22,6 +24,7 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   );

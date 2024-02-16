@@ -1,10 +1,8 @@
 'use client';
-import React from 'react';
-import ScrollToTop from 'react-scroll-to-top';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
 import ContactForm from '@/components/contactForm/ContactForm';
 import ScrollToTheTop from '@/components/scrollToTop/ScrollToTop';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Contact() {
   return (

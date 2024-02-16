@@ -1,11 +1,10 @@
 'use client';
 
+import ScrollToTheTop from '@/components/scrollToTop/ScrollToTop';
+import SocialIcons from '@/components/socialIcons/SocialIcons';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { motion } from 'framer-motion';
-import ScrollToTop from 'react-scroll-to-top';
-import SocialIcons from '@/components/socialIcons/SocialIcons';
-import ScrollToTheTop from '@/components/scrollToTop/ScrollToTop';
 
 export default function Home() {
   const router = useRouter();

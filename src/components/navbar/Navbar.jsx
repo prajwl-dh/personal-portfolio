@@ -1,9 +1,9 @@
 'use client';
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
-import { useTheme } from 'next-themes';
 import { motion } from 'framer-motion';
+import { useTheme } from 'next-themes';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 export default function Navbar() {
   const pathName = usePathname();
@@ -136,62 +136,66 @@ export default function Navbar() {
           </motion.div>
         </div>
       </div>
-      {
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={isNavOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
-          transition={{ delay: 0.1, type: 'spring' }}
-          className={`md:hidden ${
-            isNavOpen ? null : 'hidden'
-          } flex flex-col mx-3 mb-3 bg-yellow-50 dark:bg-neutral-800 min-h-20 text-gray-500 dark:text-yellow-50 text-xl font-bold items-center`}
-        >
-          <Link
-            onClick={() => {
-              setIsNavOpen(false);
-            }}
-            className={`md:hidden ${
-              isNavOpen ? null : 'hidden'
-            } mb-2 hover:text-gray-800 dark:hover:text-yellow-200 ${
-              pathName === '/about'
-                ? 'text-gray-800 underline decoration-4 underline-offset-4 dark:text-yellow-200 hover:cursor-pointer'
-                : 'no-underline'
-            }`}
-            href='/about'
-          >
-            About
-          </Link>
-          <Link
-            onClick={() => {
-              setIsNavOpen(false);
-            }}
-            className={`md:hidden ${
-              isNavOpen ? null : 'hidden'
-            } mb-2 hover:text-gray-800 dark:hover:text-yellow-200 ${
-              pathName === '/projects'
-                ? 'text-gray-800 underline decoration-4 underline-offset-8 dark:text-yellow-200 hover:cursor-pointer'
-                : 'no-underline'
-            }`}
-            href='/projects'
-          >
-            Projects
-          </Link>
-          <Link
-            onClick={() => {
-              setIsNavOpen(false);
-            }}
-            className={`md:hidden ${
-              isNavOpen ? null : 'hidden'
-            } mb-5 hover:text-gray-800 dark:hover:text-yellow-200 ${
-              pathName === '/contact'
-                ? 'text-gray-800 underline decoration-4 underline-offset-4 dark:text-yellow-200 hover:cursor-pointer'
-                : 'no-underline'
-            }`}
-            href='/contact'
-          >
-            Contact
-          </Link>
-        </motion.div>
-      }
+      {MobileNavbar(isNavOpen, setIsNavOpen, pathName)}
+    </motion.div>
+  );
+}
+
+function MobileNavbar(isNavOpen, setIsNavOpen, pathName) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: -10 }}
+      animate={isNavOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
+      transition={{ delay: 0.1, type: 'spring' }}
+      className={`md:hidden ${
+        isNavOpen ? null : 'hidden'
+      } flex flex-col mx-3 mb-3 bg-yellow-50 dark:bg-neutral-800 min-h-20 text-gray-500 dark:text-yellow-50 text-xl font-bold items-center`}
+    >
+      <Link
+        onClick={() => {
+          setIsNavOpen(false);
+        }}
+        className={`md:hidden ${
+          isNavOpen ? null : 'hidden'
+        } mb-2 hover:text-gray-800 dark:hover:text-yellow-200 ${
+          pathName === '/about'
+            ? 'text-gray-800 underline decoration-4 underline-offset-4 dark:text-yellow-200 hover:cursor-pointer'
+            : 'no-underline'
+        }`}
+        href='/about'
+      >
+        About
+      </Link>
+      <Link
+        onClick={() => {
+          setIsNavOpen(false);
+        }}
+        className={`md:hidden ${
+          isNavOpen ? null : 'hidden'
+        } mb-2 hover:text-gray-800 dark:hover:text-yellow-200 ${
+          pathName === '/projects'
+            ? 'text-gray-800 underline decoration-4 underline-offset-8 dark:text-yellow-200 hover:cursor-pointer'
+            : 'no-underline'
+        }`}
+        href='/projects'
+      >
+        Projects
+      </Link>
+      <Link
+        onClick={() => {
+          setIsNavOpen(false);
+        }}
+        className={`md:hidden ${
+          isNavOpen ? null : 'hidden'
+        } mb-5 hover:text-gray-800 dark:hover:text-yellow-200 ${
+          pathName === '/contact'
+            ? 'text-gray-800 underline decoration-4 underline-offset-4 dark:text-yellow-200 hover:cursor-pointer'
+            : 'no-underline'
+        }`}
+        href='/contact'
+      >
+        Contact
+      </Link>
     </motion.div>
   );
 }

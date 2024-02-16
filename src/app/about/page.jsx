@@ -3,7 +3,6 @@
 import ScrollToTheTop from '@/components/scrollToTop/ScrollToTop';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import ScrollToTop from 'react-scroll-to-top';
 
 export default function About() {
   const router = useRouter();

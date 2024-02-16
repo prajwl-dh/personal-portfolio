@@ -1,12 +1,10 @@
 'use client';
-import React, { useCallback } from 'react';
-import ScrollToTop from 'react-scroll-to-top';
-import githubProjects from '@/data/data';
-import { v4 as uuidv4 } from 'uuid';
-import { usePathname, useRouter } from 'next/navigation';
-import { motion } from 'framer-motion';
-import { useSearchParams } from 'next/navigation';
 import ScrollToTheTop from '@/components/scrollToTop/ScrollToTop';
+import githubProjects from '@/data/data';
+import { motion } from 'framer-motion';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { useCallback } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Projects() {
   const router = useRouter();
