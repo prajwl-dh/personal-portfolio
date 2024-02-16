@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
+import ScrollToTheTop from '@/components/scrollToTop/ScrollToTop';
 
 export default function Projects() {
   const router = useRouter();
@@ -151,19 +152,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <ScrollToTop
-        smooth
-        top='150'
-        width='40'
-        height='30'
-        style={{
-          marginBottom: '40px',
-          backgroundColor: '#fefce8',
-          outline: '4px white solid',
-          borderRadius: '50%',
-          cursor: 'pointer',
-        }}
-      />
+      <ScrollToTheTop />
     </>
   );
 }
