@@ -16,7 +16,7 @@ export default function Providers({ children }) {
   return (
     <ThemeProvider
       disableTransitionOnChange
-      defaultTheme='dark'
+      defaultTheme='light'
       attribute='class'
     >
       {children}

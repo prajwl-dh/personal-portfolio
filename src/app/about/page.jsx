@@ -4,6 +4,7 @@ import React from 'react';
 import ScrollToTop from 'react-scroll-to-top';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
+import Carousel from '@/components/gridCarousel/Carousel';
 
 export default function About() {
   const router = useRouter();
