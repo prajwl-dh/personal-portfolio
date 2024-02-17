@@ -67,6 +67,7 @@ export default function Projects() {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
+      whileHover={{ scale: '1.01' }}
       href='https://github.com/prajwl-dh?tab=repositories'
       target='_blank'
       key={uuidv4()}
@@ -96,6 +97,7 @@ export default function Projects() {
     <motion.a
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ scale: '1.01' }}
       transition={{ duration: 2, type: 'spring' }}
       onClick={() => router.push('/contact')}
       key={uuidv4()}
