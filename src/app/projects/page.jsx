@@ -34,15 +34,16 @@ export default function Projects() {
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 2, type: 'spring' }}
+        whileHover={{ scale: '1.01' }}
         href={project.link}
         target='_blank'
         key={uuidv4()}
       >
         <div
-          className={`flex flex-col text font-bold border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl justify-between gap-5 h-full items-center`}
+          className={`flex flex-col text font-bold border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl justify-between gap-5 h-full items-center`}
         >
           <Image
-            className='w-full h-72 rounded-md'
+            className='w-full h-80 border-b-2 border-gray-600 dark:border-transparent rounded-t-xl'
             src={project.image}
             alt={project.name}
             height={800}
@@ -50,10 +51,10 @@ export default function Projects() {
             quality={100}
             priority
           />
-          <div className='text font-bold text-3xl self-center text-center'>
+          <div className='text font-bold text-3xl self-center text-center p-5'>
             <q>{project.name}</q>
           </div>
-          <p className='text text-lg self-center text-center'>
+          <p className='text text-lg self-center text-center p-5'>
             {project.description}
           </p>
         </div>
