@@ -51,7 +51,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleFormSubmit}
-      className='flex flex-col gap-6 xl:gap-5 items-center mx-3 lg:mx-0 p-2 md:p-5 md:pb-2 order-last lg:order-1 border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl'
+      className='flex flex-col gap-6 xl:gap-5 items-center mx-3 lg:mx-0 p-5 md:p-5 md:pb-2 order-last lg:order-1 border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl'
     >
       <p className='self-center text text-2xl font-bold text-gray-600 dark:text-yellow-50'>
         Contact Me

@@ -1,94 +1,107 @@
 const githubProjects = [
   {
-    name: 'Personal Portfolio Website',
+    name: 'Portfolio Site',
     type: 'web',
     link: 'https://github.com/prajwl-dh/personal-portfolio',
+    image: '/portfolioScreenshot.png',
     description:
-      'My codebase for this current client side rendered website using Next.js, React.js, TailwindCSS, and Framer Motion',
+      'Next.js and React.js client-side portfolio, demonstrating modern UI/UX with TailwindCSS.',
   },
   {
-    name: 'Tetris Game',
+    name: 'Java Tetris',
     type: 'game',
     link: 'https://github.com/prajwl-dh/tetrisJavaGUI',
+    image: '/tetrisScreenshot.png',
     description:
-      'A fully working tetris game written in java that features music, highscores, saving a game, and changing game themes in real time',
+      'Java game with dynamic themes, music, high scores, and save functionality.',
   },
   {
-    name: 'A Blog Website',
+    name: 'Blog Platform',
     type: 'web',
     link: 'https://github.com/prajwl-dh/next-js-project',
+    image: '/nextProjectScreenshot.png',
     description:
-      'Blog website with blogs, login/signup feature, Github authientication, admin-section powered by React.js, Next.js, CSS, MongoDB and NextAuth',
+      'React.js blog with authentication, admin features, MongoDB, and GitHub integration.',
   },
   {
-    name: 'Tenzies game',
+    name: 'Tenzies Dice',
     type: 'game',
     link: 'https://github.com/prajwl-dh/tenzies-game',
+    image: '/tenziesScreenshot.png',
     description:
-      'A simple and fun SPA game created using React.js and CSS that utilizes useState and useEffects hooks',
+      'React.js SPA dice game, utilizing useState and useEffect for engaging gameplay.',
   },
   {
-    name: 'Vanlife Van Rental',
+    name: 'Van Rental',
     type: 'web',
     link: 'https://github.com/prajwl-dh/van-rental-app',
+    image: '/vanRentalScreenshot.png',
     description:
-      'A van rental service using React.js and react-router featuring protected routes and lazy loading. This projects utilizes features such as Actions, Loaders, etc from react-router',
+      'React.js van rental app with protected routes, lazy loading, and react-router.',
   },
   {
-    name: 'Meme Generator',
+    name: 'Meme App',
     type: 'game',
     link: 'https://github.com/prajwl-dh/random-meme-generator',
+    image: '/memeGeneratorScreenshot.png',
     description:
-      'A random meme generator app that fetches random images from the memes database and lets the user add their own captions',
+      'Generates random meme images for user-customized captions from an online database.',
   },
   {
-    name: 'Todo List App',
+    name: 'Todo Manager',
     type: 'web',
     link: 'https://github.com/prajwl-dh/to-do-list',
+    image: '/todoAppScreenshot.png',
     description:
-      'A todo list app using React.js, Redux and CSS that features adding, marking as completed, and removing todo. It also features saving todo to local storage',
+      'React and Redux based todo app with task editing and local storage.',
   },
   {
-    name: 'Tic Tac Toe game',
+    name: 'Tic Tac Toe',
     type: 'game',
     link: 'https://github.com/prajwl-dh/ticTacToe',
+    image: '/ticTacToeScreenshot.png',
     description:
-      'A tic tac toe game written in java gui featuring a computer bot with minimax algorithm',
+      'Java GUI Tic Tac Toe game with a challenging minimax algorithm bot.',
   },
   {
-    name: 'Object Shape Detection',
+    name: 'Shape Detector',
     type: 'robotics',
     link: 'https://github.com/prajwl-dh/objectDetectionOpenCV',
+    image: '/objectDetectionScreenshot.png',
     description:
-      'An object detection program written in Python using OpenCV that can detect multi-colored squared foam cubes and draw a border around them',
+      'OpenCV and Python for detecting, outlining multi-colored square foam cubes.',
   },
   {
-    name: 'LaSpace NASA Funded Rovers',
+    name: 'NASA Rovers',
     type: 'robotics',
     link: 'https://youtu.be/quAcbgUL_YU?si=eaBK-mf-6xwyslid',
+    image: '/nasaRoverScreenshot.png',
     description:
-      'NASA Funded Robotics Project during my time at McNeese State University. We created three autonomous rovers with navigation and communication capabilities',
+      'Autonomous rovers for NASA project with advanced navigation and communication.',
   },
   {
-    name: '4WD Robot',
+    name: 'Controlled Robot',
     type: 'robotics',
     link: 'https://github.com/prajwl-dh/myYahboomRobot',
+    image: '/yahboomScreenshot.png',
     description:
-      'A four wheel drive robot that can be controlled using a mobile application in real time',
+      'Mobile app-controlled four-wheel robot demonstrating real-time remote navigation.',
   },
   {
-    name: 'Pizza Restaurant Website',
+    name: 'Pizza Site',
     type: 'web',
     link: 'https://github.com/prajwl-dh/arpizza',
+    image: '/pizzaRestaurantScreenshot.png',
     description:
-      'A website for a pizza restaurant that features frontend using HTML, CSS, Javascript and backend using PHP',
+      'Dynamic pizza restaurant website with HTML, CSS, JavaScript, and PHP backend.',
   },
   {
-    name: 'Online Sports Store',
+    name: 'Sports Store',
     type: 'web',
     link: 'https://github.com/prajwl-dh/gfcStore',
+    image: '/gfcScreenshot.png',
     description:
-      'A complete shopping site with frontend and backend design that also features admin section for adding, removing and updating products in real time',
+      'E-commerce platform for sports goods with real-time product management system.',
   },
 ];
 
