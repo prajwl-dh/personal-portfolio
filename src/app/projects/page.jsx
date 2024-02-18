@@ -46,8 +46,8 @@ export default function Projects() {
             className='w-full h-80 border-b-2 border-gray-600 dark:border-transparent dark:rounded-t-xl'
             src={project.image}
             alt={project.name}
-            height={800}
-            width={800}
+            height={500}
+            width={400}
             quality={100}
             priority
           />
