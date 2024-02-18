@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://prajwalonline.com/sitemap.xml/',
+    sitemap: 'https://www.prajwalonline.com/sitemap.xml/',
   };
 }

@@ -43,7 +43,7 @@ export default function Projects() {
           className={`flex flex-col text font-bold border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl justify-between gap-5 h-full items-center`}
         >
           <Image
-            className='w-full h-80 border-b-2 border-gray-600 dark:border-transparent rounded-t-xl'
+            className='w-full h-80 border-b-2 border-gray-600 dark:border-transparent dark:rounded-t-xl'
             src={project.image}
             alt={project.name}
             height={800}
