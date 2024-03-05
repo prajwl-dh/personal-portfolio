@@ -169,7 +169,7 @@ export default function Projects() {
               onClick={() =>
                 router.push(pathname + '?' + createQueryString('type', 'clear'))
               }
-              className='text underline text-gray-500 dark:text-yellow-50 font-normal'
+              className='text underline text-gray-500 dark:text-yellow-50 font-normal hover:text-gray-600 dark:hover:text-yellow-100'
             >
               Clear Filter
             </button>
