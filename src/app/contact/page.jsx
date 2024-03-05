@@ -11,7 +11,7 @@ export default function Contact() {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 2, type: 'spring' }}
-        className='min-h-[80vh] w-full h-max md:w-9/12 md:max-w-screen-xl self-center grid grid-cols-1 lg:grid-cols-2 gap-0 md:gap-20 justify-center place-items-center md:mt-10 lg:mt-0 mb-10'
+        className='min-h-[80vh] w-full h-max md:w-9/12 md:max-w-screen-xl self-center grid grid-cols-1 lg:grid-cols-2 gap-0 md:gap-20 justify-center place-items-center md:mt-10 lg:mt-0 mb-10 lg:mb-0'
       >
         <Image
           className='p-10 md:p-0 w-fit h-fit stroke dark:hidden'

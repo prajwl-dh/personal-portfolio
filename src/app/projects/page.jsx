@@ -34,29 +34,25 @@ export default function Projects() {
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 2, type: 'spring' }}
-        whileHover={{ scale: '1.01' }}
         href={project.link}
         target='_blank'
         key={uuidv4()}
       >
         <div
-          className={`flex flex-col text font-bold border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl justify-between gap-5 h-full items-center`}
+          className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-60 dark:border-yellow-50 rounded-lg shadow-xl h-full transition-all hover:scale-95 overflow-hidden scale-90`}
         >
-          <Image
-            className='w-full h-80 border-b-2 border-gray-600 dark:border-transparent dark:rounded-t-xl'
-            src={project.image}
-            alt={project.name}
-            height={500}
-            width={400}
-            quality={100}
-            priority
-          />
-          <div className='text font-bold text-3xl self-center text-center p-5'>
-            <q>{project.name}</q>
+          <div className='flex flex-row items-center p-5 justify-between gap-5'>
+            <Image
+              className='h-40 w-60 rounded-lg overflow-hidden'
+              src={project.image}
+              alt={project.name}
+              height={600}
+              width={400}
+              priority
+            />
+            <p className='text font-bold text-3xl'>{project.name}</p>
           </div>
-          <p className='text text-lg self-center text-center p-5'>
-            {project.description}
-          </p>
+          <p className='text text-ellipsis px-5 pb-5'>{project.description}</p>
         </div>
       </motion.a>
     );
@@ -67,27 +63,20 @@ export default function Projects() {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      whileHover={{ scale: '1.01' }}
       href='https://github.com/prajwl-dh?tab=repositories'
       target='_blank'
       key={uuidv4()}
     >
       <div
-        className={`flex flex-col text font-bold border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl h-full gap-5 items-center justify-center text-center`}
+        className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-60 dark:border-yellow-50 rounded-lg shadow-xl h-full transition-all hover:scale-95 overflow-hidden scale-90 justify-center text-center`}
       >
-        <div className='text font-bold text-3xl mb-5'>
-          <q>Explore more on Github</q>
+        <div className='text font-bold text-3xl mb-5 pt-5'>
+          <q>View more on Github</q>
         </div>
         <div className='flex flex-row justify-center'>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            onHoverStart={(e) => {}}
-            onHoverEnd={(e) => {}}
-            transition={{ duration: 0.5, type: 'spring' }}
-            className='h-14 w-40 md:w-60 bg-gray-700 dark:bg-yellow-50 text text-yellow-50 dark:text-gray-700 font-bold text-2xl outline-none rounded-lg text-center p-3'
-          >
+          <button className='h-14 w-40 md:w-60 bg-gray-700 dark:bg-yellow-50 text text-yellow-50 dark:text-gray-700 font-bold text-2xl outline-none rounded-lg text-center p-3 mb-5'>
             Click Here
-          </motion.button>
+          </button>
         </div>
       </div>
     </motion.a>
@@ -97,25 +86,19 @@ export default function Projects() {
     <motion.a
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
-      whileHover={{ scale: '1.01' }}
       transition={{ duration: 2, type: 'spring' }}
       onClick={() => router.push('/contact')}
       key={uuidv4()}
+      className='mt-2 sm:mt-0'
     >
       <div
-        className={`flex flex-col text font-bold border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl h-full gap-5 items-center justify-center text-center`}
+        className={`flex flex-col text font-bold bg-white bg-opacity-60 dark:bg-neutral-700 dark:border-yellow-50 rounded-lg shadow-xl h-full transition-all hover:scale-95 overflow-hidden scale-90 justify-center text-center cursor-pointer`}
       >
-        <div className='text font-bold text-3xl mb-5'>
+        <div className='text font-bold text-3xl mb-5 pt-5'>
           <q>Contact Me</q>
         </div>
         <div className='flex flex-row justify-center'>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            onHoverStart={(e) => {}}
-            onHoverEnd={(e) => {}}
-            transition={{ duration: 0.5, type: 'spring' }}
-            className='h-14 w-40 md:w-60 bg-gray-700 dark:bg-yellow-50 text text-yellow-50 dark:text-gray-700 font-bold text-2xl outline-none rounded-lg text-center p-3'
-          >
+          <motion.button className='h-14 w-40 md:w-60 bg-gray-700 dark:bg-yellow-50 text text-yellow-50 dark:text-gray-700 font-bold text-2xl outline-none rounded-lg text-center p-3 mb-5'>
             Click Here
           </motion.button>
         </div>
@@ -191,7 +174,7 @@ export default function Projects() {
               Clear Filter
             </button>
           </motion.div>
-          <div className='mt-0 md:mt-10 w-full p-5 md:p-0 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 md:gap-5 text-gray-500 dark:text-yellow-50'>
+          <div className='mt-0 md:mt-10 w-full p-5 md:p-0 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-0 text-gray-600 dark:text-yellow-50'>
             {allProjects}
           </div>
         </div>
