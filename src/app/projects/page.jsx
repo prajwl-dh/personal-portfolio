@@ -39,7 +39,7 @@ export default function Projects() {
         key={uuidv4()}
       >
         <div
-          className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-60 dark:border-yellow-50 rounded-lg shadow-xl h-full transition-all hover:scale-95 overflow-hidden scale-90`}
+          className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-60 dark:border-yellow-50 rounded-lg shadow-xl h-full transition-all hover:scale-105 overflow-hidden`}
         >
           <div className='flex flex-row items-center p-5 justify-between gap-5'>
             <Image
@@ -68,7 +68,7 @@ export default function Projects() {
       key={uuidv4()}
     >
       <div
-        className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-60 dark:border-yellow-50 rounded-lg shadow-xl h-full transition-all hover:scale-95 overflow-hidden scale-90 justify-center text-center`}
+        className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-60 dark:border-yellow-50 rounded-lg shadow-xl h-full transition-all hover:scale-105 overflow-hidden justify-center text-center`}
       >
         <div className='text font-bold text-3xl mb-5 pt-5'>
           <q>View more on Github</q>
@@ -92,7 +92,7 @@ export default function Projects() {
       className='mt-2 sm:mt-0'
     >
       <div
-        className={`flex flex-col text font-bold bg-white bg-opacity-60 dark:bg-neutral-700 dark:border-yellow-50 rounded-lg shadow-xl h-full transition-all hover:scale-95 overflow-hidden scale-90 justify-center text-center cursor-pointer`}
+        className={`flex flex-col text font-bold bg-white bg-opacity-60 dark:bg-neutral-700 dark:border-yellow-50 rounded-lg shadow-xl h-full transition-all hover:scale-105 overflow-hidden justify-center text-center cursor-pointer`}
       >
         <div className='text font-bold text-3xl mb-5 pt-5'>
           <q>Contact Me</q>
@@ -135,7 +135,7 @@ export default function Projects() {
                 searchParams.get('type') === 'web'
                   ? 'bg-gray-600 text-yellow-50 border-0 dark:bg-yellow-50 dark:text-neutral-700'
                   : 'border-2 border-gray-500 text-gray-500 dark:border-yellow-50 dark:text-yellow-50'
-              } h-8 min-w-24 rounded-lg`}
+              } h-8 min-w-24 rounded-lg hover:bg-gray-600 hover:text-yellow-50 dark:hover:bg-yellow-50 dark:hover:text-neutral-700`}
             >
               Web
             </button>
@@ -147,7 +147,7 @@ export default function Projects() {
                 searchParams.get('type') === 'game'
                   ? 'bg-gray-600 text-yellow-50 border-0 dark:bg-yellow-50 dark:text-neutral-700'
                   : 'border-2 border-gray-500 text-gray-500 dark:border-yellow-50 dark:text-yellow-50'
-              } h-8 min-w-24 rounded-lg`}
+              } h-8 min-w-24 rounded-lg hover:bg-gray-600 hover:text-yellow-50 dark:hover:bg-yellow-50 dark:hover:text-neutral-700`}
             >
               Games
             </button>
@@ -161,7 +161,7 @@ export default function Projects() {
                 searchParams.get('type') === 'robotics'
                   ? 'bg-gray-600 text-yellow-50 border-0 dark:bg-yellow-50 dark:text-neutral-700'
                   : 'border-2 border-gray-500 text-gray-500 dark:border-yellow-50 dark:text-yellow-50'
-              } h-8 min-w-24 rounded-lg`}
+              } h-8 min-w-24 rounded-lg hover:bg-gray-600 hover:text-yellow-50 dark:hover:bg-yellow-50 dark:hover:text-neutral-700`}
             >
               Robotics
             </button>
@@ -174,7 +174,7 @@ export default function Projects() {
               Clear Filter
             </button>
           </motion.div>
-          <div className='mt-0 md:mt-10 w-full p-5 md:p-0 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-0 text-gray-600 dark:text-yellow-50'>
+          <div className='mt-0 md:mt-10 w-full p-5 md:p-0 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 text-gray-600 dark:text-yellow-50 gap-10'>
             {allProjects}
           </div>
         </div>
