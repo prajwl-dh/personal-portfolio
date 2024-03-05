@@ -30,7 +30,7 @@ function MyProjects(router) {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      className='text cursor-pointer font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl'
+      className='text cursor-pointer font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-lg rounded-sm shadow-xl'
     >
       <span className='text text-blue-500 text-xl'>Personal Projects : </span>
       <br />
@@ -57,7 +57,7 @@ function Engagements() {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl'
+      className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-lg rounded-sm shadow-xl'
     >
       <span className='text text-blue-500 text-xl'>Engagements & Hobbies:</span>
       <br />
@@ -78,7 +78,7 @@ function Skills() {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl'
+      className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-lg rounded-sm shadow-xl'
     >
       <span className='text text-blue-500 text-xl'>Skills:</span>
       <br />
@@ -122,7 +122,7 @@ function Education() {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl'
+      className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-lg rounded-sm shadow-xl'
     >
       <span className='text text-blue-500 text-xl'>
         Education : <br />
@@ -165,7 +165,7 @@ function MyRoles() {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl'
+      className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-lg rounded-sm shadow-xl'
     >
       <span className='text text-blue-500 text-xl'>
         Professional experience:
@@ -203,7 +203,7 @@ function AboutMe() {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-2xl rounded-sm shadow-xl'
+      className='text font-bold text-start border-4 border-b-[20px] border-r-[20px] dark:border-0 border-gray-700 p-5 bg-white dark:bg-neutral-700 dark:border-yellow-50 dark:rounded-lg rounded-sm shadow-xl'
     >
       <span className='text font-bold text-xl'>Hi!</span>
       <br />
