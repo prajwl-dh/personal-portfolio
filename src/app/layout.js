@@ -12,7 +12,7 @@ export const metadata = {
   title:
     'Prajwal Dhungana - Frontend Engineer & Web Developer | Grand Prairie, TX',
   description:
-    "Meet Prajwal Dhungana, a dedicated Frontend Engineer based in Grand Prairie, TX, specializing in the MERN stack, Next.js, and Tailwind CSS. With a self-taught background, Prajwal is committed to continuous learning, ensuring his web development skills are both cutting-edge and versatile. Explore Prajwal's portfolio to discover innovative web solutions that blend modern design with functional excellence.",
+    "Meet Prajwal Dhungana, a dedicated Frontend Engineer, specializing in the MERN stack, Next.js, and Tailwind CSS. With a self-taught background, Prajwal is committed to continuous learning, ensuring his web development skills are both cutting-edge and versatile. Explore Prajwal's portfolio to discover innovative web solutions that blend modern design with functional excellence.",
 };
 
 export default function RootLayout({ children }) {

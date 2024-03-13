@@ -39,7 +39,7 @@ export default function Projects() {
         key={uuidv4()}
       >
         <div
-          className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-80 dark:border-yellow-50 rounded-lg shadow-xl h-full transition-all hover:scale-105 overflow-hidden`}
+          className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-50 dark:border-yellow-50 rounded-lg shadow-2xl h-full transition-all hover:scale-105 overflow-hidden`}
         >
           <div className='flex flex-row items-center p-5 justify-between gap-5'>
             <Image
@@ -68,7 +68,7 @@ export default function Projects() {
       key={uuidv4()}
     >
       <div
-        className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-80 dark:border-yellow-50 rounded-lg shadow-xl h-full transition-all hover:scale-105 overflow-hidden justify-center text-center`}
+        className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-50 dark:border-yellow-50 rounded-lg shadow-2xl h-full transition-all hover:scale-105 overflow-hidden justify-center text-center`}
       >
         <div className='text font-bold text-3xl mb-5 pt-5'>
           <q>View more on Github</q>
@@ -92,7 +92,7 @@ export default function Projects() {
       className='mt-2 sm:mt-0'
     >
       <div
-        className={`flex flex-col text font-bold bg-white bg-opacity-80 dark:bg-neutral-700 dark:border-yellow-50 rounded-lg shadow-xl h-full transition-all hover:scale-105 overflow-hidden justify-center text-center cursor-pointer`}
+        className={`flex flex-col text font-bold bg-white bg-opacity-50 dark:bg-neutral-700 dark:border-yellow-50 rounded-lg shadow-2xl h-full transition-all hover:scale-105 overflow-hidden justify-center text-center cursor-pointer`}
       >
         <div className='text font-bold text-3xl mb-5 pt-5'>
           <q>Contact Me</q>
