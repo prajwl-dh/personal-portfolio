@@ -47,7 +47,7 @@ export default function Navbar() {
               pathName === '/'
                 ? 'text-gray-500 underline decoration-4 underline-offset-8 dark:text-yellow-200'
                 : null
-            } text text-gray-500 dark:text-yellow-50 hover:cursor-pointer font-bold text-2xl hover:text-gray-500 dark:hover:text-yellow-200 hover:underline hover:underline-offset-8 hover:decoration-4`}
+            } text text-gray-500 dark:text-yellow-50 hover:cursor-pointer font-bold text-2xl hover:text-gray-800 dark:hover:text-yellow-200 hover:underline hover:underline-offset-8 hover:decoration-4`}
           >
             #prajwl-dh
           </p>

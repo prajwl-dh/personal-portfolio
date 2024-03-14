@@ -142,7 +142,8 @@ function Education() {
       Louisiana
       <br />
       <br />
-      Experience: Web development, Robotics, Programming, Software Engineering
+      <span className='text text-red-400'>At McNeese: </span>Web development,
+      Robotics, Programming, Software Engineering
     </motion.span>
   );
 }
