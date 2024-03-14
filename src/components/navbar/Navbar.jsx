@@ -149,7 +149,7 @@ function MobileNavbar(isNavOpen, setIsNavOpen, pathName) {
       transition={{ delay: 0.1, type: 'spring' }}
       className={`md:hidden ${
         isNavOpen ? null : 'hidden'
-      } flex flex-col mx-3 mb-3 bg-yellow-50 dark:bg-neutral-800 min-h-20 text-gray-500 dark:text-yellow-50 text-xl font-bold items-center`}
+      } flex flex-col mx-3 mb-3 bg-[#fffdef] dark:bg-neutral-800 min-h-20 text-gray-500 dark:text-yellow-50 text-xl font-bold items-center`}
     >
       <Link
         onClick={() => {
