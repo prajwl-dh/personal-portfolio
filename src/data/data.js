@@ -84,8 +84,7 @@ const githubProjects = [
     type: 'robotics',
     link: 'https://github.com/prajwl-dh/myYahboomRobot',
     image: '/yahboomScreenshot.png',
-    description:
-      'Mobile app-controlled four-wheel robot demonstrating real-time remote navigation.',
+    description: 'Mobile app-controlled four-wheel robot built using Arduino.',
   },
   {
     name: 'Pizza Site',
