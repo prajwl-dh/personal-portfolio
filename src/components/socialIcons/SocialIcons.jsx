@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function SocialIcons() {
   return (
-    <div className='mt-10 mb-10 max-w-40 flex flex-row justify-between text text-gray-700 dark:text-yellow-50'>
+    <div className='mt-10 mb-10 max-w-40 flex flex-row justify-between gap-3 text text-gray-700 dark:text-yellow-50'>
       <motion.a
         whileHover={{ scale: 1.05 }}
         onHoverStart={(e) => {}}
