@@ -13,7 +13,7 @@ const githubProjects = [
     link: 'https://github.com/prajwl-dh/tetrisJavaGUI',
     image: '/tetrisScreenshot.png',
     description:
-      'Java game with dynamic themes, music, high scores, and save functionality.',
+      'Developed in Java with dynamic themes, music, high scores, and save functionality.',
   },
   {
     name: 'Blog Platform',
@@ -69,7 +69,7 @@ const githubProjects = [
     link: 'https://github.com/prajwl-dh/objectDetectionOpenCV',
     image: '/objectDetectionScreenshot.png',
     description:
-      'OpenCV and Python for detecting, outlining multi-colored square foam cubes.',
+      'Developed with OpenCV and Python for detecting, outlining multi-colored square foam cubes.',
   },
   {
     name: 'NASA Rovers',
@@ -80,7 +80,7 @@ const githubProjects = [
       'Autonomous rovers for NASA project with advanced navigation and communication.',
   },
   {
-    name: 'Controlled Robot',
+    name: 'Mobile Controlled Robot',
     type: 'robotics',
     link: 'https://github.com/prajwl-dh/myYahboomRobot',
     image: '/yahboomScreenshot.png',
@@ -96,7 +96,7 @@ const githubProjects = [
       'Dynamic pizza restaurant website with HTML, CSS, JavaScript, and PHP backend.',
   },
   {
-    name: 'Sports Store',
+    name: 'GFC Sports Store',
     type: 'web',
     link: 'https://github.com/prajwl-dh/gfcStore',
     image: '/gfcScreenshot.png',
