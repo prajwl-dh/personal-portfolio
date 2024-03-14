@@ -35,6 +35,6 @@
     }
 
     body {
-        @apply flex flex-col justify-between min-h-screen bg-yellow-50 dark:bg-neutral-800 dark:text-white antialiased;
+        @apply flex flex-col justify-between min-h-screen bg-[#fffdef] dark:bg-neutral-800 dark:text-white antialiased;
     }
 }

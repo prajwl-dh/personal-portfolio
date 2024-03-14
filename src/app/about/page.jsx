@@ -3,9 +3,24 @@
 import ScrollToTheTop from '@/components/scrollToTop/ScrollToTop';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
+import React from 'react';
 
 export default function About() {
   const router = useRouter();
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div className='w-full md:w-9/12 lg:max-w-screen-xl self-center'>
@@ -72,6 +87,17 @@ function Engagements() {
 }
 
 function Skills() {
+  const windowWidth = window.innerWidth;
+
+  let perline = 15; // default value for larger screens
+
+  if (windowWidth < 450) {
+    perline = 7;
+  } else if (windowWidth < 1000) {
+    perline = 9;
+  } else if (windowWidth < 1080) {
+    perline = 12;
+  }
   return (
     <motion.span
       initial={{ opacity: 0, y: 10 }}
@@ -84,7 +110,9 @@ function Skills() {
       <br />
       <img
         className='w-full'
-        src='https://skillicons.dev/icons?i=html,js,ts,css,tailwind,react,redux,express,nodejs,nextjs,figma,materialui,ps,git,github,postgres,mongodb,sqlite,mysql,firebase,gcp,aws,azure,postman,jest,jquery,php,wordpress,bootstrap,regex,npm,vite,webpack,nginx,docker,go,graphql,jenkins,java,c,py,arduino,opencv,tensorflow,raspberrypi,linux,bash,redhat,vscode,atom,arch,mint,ubuntu,debian,apple,windows'
+        src={`https://skillicons.dev/icons?i=html,js,ts,css,tailwind,react,redux,express,nodejs,nextjs,figma,materialui,ps,git,github,postgres,mongodb,sqlite,mysql,firebase,gcp,aws,azure,postman,jest,jquery,php,wordpress,bootstrap,regex,npm,vite,webpack,nginx,docker,go,graphql,jenkins,java,c,py,arduino,opencv,tensorflow,raspberrypi,linux,bash,redhat,vscode,atom,arch,mint,ubuntu,debian,apple,windows${
+          perline ? `&perline=${perline}` : ''
+        }`}
         alt='skills icons'
         loading='lazy'
       />
