@@ -42,15 +42,15 @@ export default function Projects() {
           className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-50 dark:border-yellow-50 rounded-lg shadow-2xl h-full transition-all hover:scale-105 overflow-hidden`}
         >
           <div className='flex flex-row items-center p-5 justify-between gap-5'>
+            <p className='text font-bold text-3xl'>{project.name}</p>
             <Image
-              className='h-40 w-60 rounded-lg overflow-hidden'
+              className=' h-36 w-60 rounded-lg overflow-hidden'
               src={project.image}
               alt={project.name}
               height={600}
               width={400}
               priority
             />
-            <p className='text font-bold text-3xl'>{project.name}</p>
           </div>
           <p className='text text-ellipsis px-5 pb-5'>{project.description}</p>
         </div>

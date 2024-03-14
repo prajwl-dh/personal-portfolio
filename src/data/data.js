@@ -77,7 +77,7 @@ const githubProjects = [
     link: 'https://youtu.be/quAcbgUL_YU?si=eaBK-mf-6xwyslid',
     image: '/nasaRoverScreenshot.png',
     description:
-      'Autonomous rovers for NASA project with advanced navigation and communication.',
+      'Autonomous rovers for NASA funded project with advanced navigation and communication.',
   },
   {
     name: 'Mobile Controlled Robot',
