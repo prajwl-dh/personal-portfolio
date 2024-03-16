@@ -3,22 +3,12 @@ import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 export default function Navbar() {
   const pathName = usePathname();
-  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const [isNavOpen, setIsNavOpen] = useState(false);
-
-  // useEffect only runs on the client, so now we can safely show the UI
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
 
   function navigationToggle() {
     setIsNavOpen((prev) => !prev);
@@ -116,10 +106,7 @@ export default function Navbar() {
               ></path>
             </svg>
           )}
-          <motion.div
-            animate={isNavOpen ? { rotate: 90 } : { rotate: 0 }}
-            transition={{ type: 'spring', duration: '0.8' }}
-          >
+          <div>
             <svg
               onClick={navigationToggle}
               className={`text text-2xl md:hidden hover:cursor-pointer`}
@@ -133,7 +120,7 @@ export default function Navbar() {
                 d='M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z'
               />
             </svg>
-          </motion.div>
+          </div>
         </div>
       </div>
       {MobileNavbar(isNavOpen, setIsNavOpen, pathName)}
@@ -146,7 +133,7 @@ function MobileNavbar(isNavOpen, setIsNavOpen, pathName) {
     <motion.div
       initial={{ opacity: 0, y: -10 }}
       animate={isNavOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
-      transition={{ delay: 0.1, type: 'spring' }}
+      transition={{ type: 'spring' }}
       className={`md:hidden ${
         isNavOpen ? null : 'hidden'
       } flex flex-col mx-3 mb-3 bg-[#fffdef] dark:bg-neutral-800 min-h-20 text-gray-500 dark:text-yellow-50 text-xl font-bold items-center`}
