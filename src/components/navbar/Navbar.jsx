@@ -106,7 +106,10 @@ export default function Navbar() {
               ></path>
             </svg>
           )}
-          <div>
+          <motion.div
+            animate={isNavOpen ? { rotate: 90 } : { rotate: 0 }}
+            transition={{ type: 'spring', duration: '0.8' }}
+          >
             <svg
               onClick={navigationToggle}
               className={`text text-2xl md:hidden hover:cursor-pointer`}
@@ -120,7 +123,7 @@ export default function Navbar() {
                 d='M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z'
               />
             </svg>
-          </div>
+          </motion.div>
         </div>
       </div>
       {MobileNavbar(isNavOpen, setIsNavOpen, pathName)}
