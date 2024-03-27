@@ -42,7 +42,22 @@ export default function Projects() {
           className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-50 dark:border-yellow-50 rounded-lg shadow-2xl h-full transition-all hover:scale-105 overflow-hidden`}
         >
           <div className='flex flex-row items-center p-5 justify-between gap-5'>
-            <p className='text font-bold text-3xl'>{project.name}</p>
+            <p className='text font-bold text-3xl'>
+              {project.name}{' '}
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='32'
+                height='32'
+                viewBox='0 0 16 16'
+              >
+                <path
+                  fill='currentColor'
+                  fill-rule='evenodd'
+                  d='M10.75 1a.75.75 0 0 0 0 1.5h1.69L8.22 6.72a.75.75 0 0 0 1.06 1.06l4.22-4.22v1.69a.75.75 0 0 0 1.5 0V1zM2.5 4v9a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V8.75a.75.75 0 0 1 1.5 0V13a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h4.25a.75.75 0 0 1 0 1.5H3a.5.5 0 0 0-.5.5'
+                  clip-rule='evenodd'
+                />
+              </svg>
+            </p>
             <Image
               className=' h-36 w-60 rounded-lg overflow-hidden'
               src={project.image}
