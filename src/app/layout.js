@@ -10,9 +10,9 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title:
-    'Prajwal Dhungana - Frontend Engineer & Web Developer | Grand Prairie, TX',
+    'Prajwal Dhungana - Frontend Engineer | Open Source Contributor | MERN Specialist | Full-Stack Skills with Node.js and Next.js',
   description:
-    "Meet Prajwal Dhungana, a dedicated Frontend Engineer, specializing in the MERN stack, Next.js, and Tailwind CSS. With a self-taught background, Prajwal is committed to continuous learning, ensuring his web development skills are both cutting-edge and versatile. Explore Prajwal's portfolio to discover innovative web solutions that blend modern design with functional excellence.",
+    "Meet Prajwal Dhungana, a dedicated Frontend Engineer and Open Source Contributor specializing in the MERN stack, Next.js, and Tailwind CSS. With full-stack skills including Node.js, Prajwal is committed to continuous learning, ensuring his web development expertise remains cutting-edge and versatile. Explore Prajwal's portfolio for innovative web solutions blending modern design with functional excellence.",
 };
 
 export default function RootLayout({ children }) {
