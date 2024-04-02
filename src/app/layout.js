@@ -9,10 +9,28 @@ import Providers from './provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
+  metadataBase: new URL('https://prajwalonline.com'),
   title:
-    'Prajwal Dhungana - Frontend Engineer | MERN Specialist | Full-Stack Skills with Node.js and Next.js | Open Source Contributor ',
+    'Prajwal Dhungana - Frontend Engineer | MERN Specialist | Full-Stack Skills with Node.js and Next.js | Open Source Contributor',
   description:
     "Meet Prajwal Dhungana, a dedicated Frontend Engineer and Open Source Contributor specializing in the MERN stack, Next.js, and Tailwind CSS. With full-stack skills including Node.js, Prajwal is committed to continuous learning, ensuring his web development expertise remains cutting-edge and versatile. Explore Prajwal's portfolio for innovative web solutions blending modern design with functional excellence.",
+  openGraph: {
+    url: 'https://prajwalonline.com',
+    type: 'website',
+    title:
+      'Prajwal Dhungana - Frontend Engineer | MERN Specialist | Full-Stack Skills with Node.js and Next.js | Open Source Contributor',
+    description:
+      "Meet Prajwal Dhungana, a dedicated Frontend Engineer and Open Source Contributor specializing in the MERN stack, Next.js, and Tailwind CSS. With full-stack skills including Node.js, Prajwal is committed to continuous learning, ensuring his web development expertise remains cutting-edge and versatile. Explore Prajwal's portfolio for innovative web solutions blending modern design with functional excellence.",
+  },
+  twitter: {
+    card: 'summary_large_image',
+    domain: 'prajwalonline.com',
+    url: 'https://prajwalonline.com',
+    title:
+      'Prajwal Dhungana - Frontend Engineer | MERN Specialist | Full-Stack Skills with Node.js and Next.js | Open Source Contributor',
+    description:
+      "Meet Prajwal Dhungana, a dedicated Frontend Engineer and Open Source Contributor specializing in the MERN stack, Next.js, and Tailwind CSS. With full-stack skills including Node.js, Prajwal is committed to continuous learning, ensuring his web development expertise remains cutting-edge and versatile. Explore Prajwal's portfolio for innovative web solutions blending modern design with functional excellence.",
+  },
 };
 
 export default function RootLayout({ children }) {
