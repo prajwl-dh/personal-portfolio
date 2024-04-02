@@ -90,7 +90,7 @@ export default function ContactForm() {
         onHoverStart={(e) => {}}
         onHoverEnd={(e) => {}}
         transition={{ duration: 0.5, type: 'spring' }}
-        className='p-3 bg-gray-700 font-bold rounded-lg cursor-pointer border-none outline-none text-yellow-50 dark:bg-yellow-50 dark:text-gray-700 mb-0'
+        className='p-3 bg-gray-700 font-bold rounded-lg cursor-pointer border-none outline-none text-[#fffffc] dark:bg-yellow-50 dark:text-gray-700 mb-0'
       >
         Send Message
       </motion.button>

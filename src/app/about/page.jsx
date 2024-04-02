@@ -55,7 +55,7 @@ function MyProjects(router) {
           onHoverStart={() => {}}
           onHoverEnd={() => {}}
           transition={{ duration: 0.5, type: 'spring' }}
-          className='h-14 w-60 bg-gray-700 dark:bg-yellow-50 text text-yellow-50 dark:text-gray-700 font-bold text-2xl outline-none rounded-lg'
+          className='h-14 w-60 bg-gray-700 dark:bg-yellow-50 text text-[#fffffc] dark:text-gray-700 font-bold text-2xl outline-none rounded-lg'
           onClick={() => router.push('/projects')}
         >
           Click Here

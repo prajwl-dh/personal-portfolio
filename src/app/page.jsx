@@ -65,7 +65,7 @@ function Intro(router) {
         onHoverEnd={(e) => {}}
         transition={{ duration: 0.5, type: 'spring' }}
         onClick={() => router.push('/about')}
-        className='h-10 w-32 max-w-40 mt-5 bg-gray-700 dark:bg-yellow-50 text text-yellow-50 dark:text-gray-700 font-bold outline-none rounded-lg self-center md:self-start'
+        className='h-10 w-32 max-w-40 mt-5 bg-gray-700 dark:bg-yellow-50 text text-[#fffffc] dark:text-gray-700 font-bold outline-none rounded-lg self-center md:self-start'
       >
         About Me
       </motion.button>

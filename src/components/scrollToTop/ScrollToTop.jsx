@@ -9,7 +9,7 @@ export default function ScrollToTheTop() {
       height='30'
       style={{
         marginBottom: '40px',
-        backgroundColor: '#fefce8',
+        backgroundColor: '#fffffc',
         outline: '4px white solid',
         borderRadius: '50%',
         cursor: 'pointer',

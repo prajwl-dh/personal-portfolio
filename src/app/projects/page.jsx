@@ -85,11 +85,24 @@ export default function Projects() {
       <div
         className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-50 dark:border-yellow-50 rounded-lg shadow-2xl h-full transition-all hover:scale-105 overflow-hidden justify-center text-center`}
       >
-        <div className='text font-bold text-3xl mb-5 pt-5'>
+        <div className='text font-bold text-3xl mb-5 pt-5 flex flex-col items-center'>
           <q>View more on Github</q>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='32'
+            height='32'
+            viewBox='0 0 16 16'
+          >
+            <path
+              fill='currentColor'
+              fill-rule='evenodd'
+              d='M10.75 1a.75.75 0 0 0 0 1.5h1.69L8.22 6.72a.75.75 0 0 0 1.06 1.06l4.22-4.22v1.69a.75.75 0 0 0 1.5 0V1zM2.5 4v9a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V8.75a.75.75 0 0 1 1.5 0V13a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h4.25a.75.75 0 0 1 0 1.5H3a.5.5 0 0 0-.5.5'
+              clip-rule='evenodd'
+            />
+          </svg>
         </div>
         <div className='flex flex-row justify-center'>
-          <button className='h-14 w-40 md:w-60 bg-gray-700 dark:bg-yellow-50 text text-yellow-50 dark:text-gray-700 font-bold text-2xl outline-none rounded-lg text-center p-3 mb-5'>
+          <button className='h-14 w-40 md:w-60 bg-gray-700 dark:bg-yellow-50 text text-[#fffffc] dark:text-gray-700 font-bold text-2xl outline-none rounded-lg text-center p-3 mb-5'>
             Click Here
           </button>
         </div>
@@ -113,7 +126,7 @@ export default function Projects() {
           <q>Contact Me</q>
         </div>
         <div className='flex flex-row justify-center'>
-          <motion.button className='h-14 w-40 md:w-60 bg-gray-700 dark:bg-yellow-50 text text-yellow-50 dark:text-gray-700 font-bold text-2xl outline-none rounded-lg text-center p-3 mb-5'>
+          <motion.button className='h-14 w-40 md:w-60 bg-gray-700 dark:bg-yellow-50 text text-[#fffffc] dark:text-gray-700 font-bold text-2xl outline-none rounded-lg text-center p-3 mb-5'>
             Click Here
           </motion.button>
         </div>
@@ -148,9 +161,9 @@ export default function Projects() {
               }
               className={`${
                 searchParams.get('type') === 'web'
-                  ? 'bg-gray-600 text-yellow-50 border-0 dark:bg-yellow-50 dark:text-neutral-700'
+                  ? 'bg-gray-600 text-[#fffffc] border-0 dark:bg-yellow-50 dark:text-neutral-700'
                   : 'border-2 border-gray-500 text-gray-500 dark:border-yellow-50 dark:text-yellow-50'
-              } h-8 min-w-24 rounded-lg hover:bg-gray-600 hover:text-yellow-50 dark:hover:bg-yellow-50 dark:hover:text-neutral-700`}
+              } h-8 min-w-24 rounded-lg hover:bg-gray-600 hover:text-[#fffffc] dark:hover:bg-yellow-50 dark:hover:text-neutral-700`}
             >
               Web
             </button>
@@ -160,9 +173,9 @@ export default function Projects() {
               }
               className={`${
                 searchParams.get('type') === 'game'
-                  ? 'bg-gray-600 text-yellow-50 border-0 dark:bg-yellow-50 dark:text-neutral-700'
+                  ? 'bg-gray-600 text-[#fffffc] border-0 dark:bg-yellow-50 dark:text-neutral-700'
                   : 'border-2 border-gray-500 text-gray-500 dark:border-yellow-50 dark:text-yellow-50'
-              } h-8 min-w-24 rounded-lg hover:bg-gray-600 hover:text-yellow-50 dark:hover:bg-yellow-50 dark:hover:text-neutral-700`}
+              } h-8 min-w-24 rounded-lg hover:bg-gray-600 hover:text-[#fffffc] dark:hover:bg-yellow-50 dark:hover:text-neutral-700`}
             >
               Games
             </button>
@@ -174,9 +187,9 @@ export default function Projects() {
               }
               className={`${
                 searchParams.get('type') === 'robotics'
-                  ? 'bg-gray-600 text-yellow-50 border-0 dark:bg-yellow-50 dark:text-neutral-700'
+                  ? 'bg-gray-600 text-[#fffffc] border-0 dark:bg-yellow-50 dark:text-neutral-700'
                   : 'border-2 border-gray-500 text-gray-500 dark:border-yellow-50 dark:text-yellow-50'
-              } h-8 min-w-24 rounded-lg hover:bg-gray-600 hover:text-yellow-50 dark:hover:bg-yellow-50 dark:hover:text-neutral-700`}
+              } h-8 min-w-24 rounded-lg hover:bg-gray-600 hover:text-[#fffffc] dark:hover:bg-yellow-50 dark:hover:text-neutral-700`}
             >
               Robotics
             </button>
