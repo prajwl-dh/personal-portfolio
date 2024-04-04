@@ -1,5 +1,13 @@
 const githubProjects = [
   {
+    name: 'Rapid Web Solutions',
+    type: 'web',
+    link: 'https://rapidwebsol.com',
+    image: '/rapidScreenshot.png',
+    description:
+      'A web solutions agency website crafted with Next.js, Tailwind CSS, and React for a client.',
+  },
+  {
     name: 'Portfolio Site',
     type: 'web',
     link: 'https://github.com/prajwl-dh/personal-portfolio',

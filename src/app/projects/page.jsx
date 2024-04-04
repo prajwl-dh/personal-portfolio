@@ -146,7 +146,7 @@ export default function Projects() {
           transition={{ duration: 2, type: 'spring' }}
           className='text text-2xl md:text-3xl font-bold text-gray-500 dark:text-yellow-50 mb-5'
         >
-          Explore my personal projects
+          Explore my projects
         </motion.p>
         <div className='w-full'>
           <motion.div

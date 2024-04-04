@@ -46,7 +46,7 @@ function MyProjects(router) {
       transition={{ duration: 2, type: 'spring' }}
       className='text font-bold text-start p-5 bg-white dark:bg-neutral-700 bg-opacity-50 rounded-lg shadow-2xl cursor-pointer'
     >
-      <span className='text text-blue-500 text-xl'>Personal Projects : </span>
+      <span className='text text-blue-500 text-xl'>My Projects : </span>
       <br />
       <br />
       <span className='flex flex-row justify-center'>
