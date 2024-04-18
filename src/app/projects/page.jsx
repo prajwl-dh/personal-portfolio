@@ -139,7 +139,7 @@ export default function Projects() {
 
   return (
     <>
-      <div className='w-full md:w-9/12 md:max-w-screen-xl self-center flex flex-col p-5 md:mt-10 md:p-0 mb-10'>
+      <div className='w-full md:w-9/12 md:max-w-screen-xl self-center flex flex-col p-5 mt-[100px] md:p-0 mb-10'>
         <motion.p
           initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -15,7 +15,7 @@ export default function Home() {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 2, type: 'spring' }}
-        className=' min-h-[80vh] w-full h-max md:w-9/12 md:max-w-screen-xl self-center grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 justify-items-center place-content-start md:place-content-center place-items-center md:mt-0 p-5 md:p-0'
+        className=' min-h-[80vh] w-full h-max md:w-9/12 md:max-w-screen-xl self-center grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 justify-items-center place-content-start md:place-content-center place-items-center mt-[80px] p-5 md:p-0'
       >
         {Intro(router)}
         {Images()}
