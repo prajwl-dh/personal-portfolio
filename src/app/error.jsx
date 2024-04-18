@@ -15,7 +15,7 @@ export default function Error() {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      className='flex flex-col justify-center items-center mt-5 mb-5'
+      className='flex flex-col justify-center items-center mb-5 mt-[80px]'
     >
       <Image
         className='p-5 dark:hidden'
