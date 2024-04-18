@@ -12,10 +12,6 @@ export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [sticky, setSticky] = React.useState(false);
 
-  function navigationToggle() {
-    setIsNavOpen((prev) => !prev);
-  }
-
   function handleScroll() {
     if (scrollY == 0) {
       setSticky(false);
@@ -27,6 +23,10 @@ export default function Navbar() {
   React.useEffect(() => {
     window.addEventListener('scroll', handleScroll);
   }, []);
+
+  function navigationToggle() {
+    setIsNavOpen((prev) => !prev);
+  }
 
   return (
     <motion.div
