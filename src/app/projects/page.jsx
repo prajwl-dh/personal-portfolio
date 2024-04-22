@@ -39,27 +39,35 @@ export default function Projects() {
         key={uuidv4()}
       >
         <div
-          className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-50 dark:border-yellow-50 rounded-lg shadow-2xl h-full transition-all hover:scale-105 overflow-hidden`}
+          className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-50 dark:border-yellow-50 rounded-md shadow-2xl h-full transition-all hover:scale-105 overflow-hidden`}
         >
-          <div className='flex flex-row items-center p-5 justify-between gap-5'>
-            <p className='text font-bold text-3xl'>
-              {project.name}{' '}
+          <div className='flex flex-row justify-between items-center gap-5 p-5'>
+            <p className='text font-bold text-3xl inline-block'>
+              {project.name}
               <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='32'
-                height='32'
+                height={20}
+                width={20}
                 viewBox='0 0 16 16'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                className='inline-block ml-2'
               >
-                <path
-                  fill='currentColor'
-                  fill-rule='evenodd'
-                  d='M10.75 1a.75.75 0 0 0 0 1.5h1.69L8.22 6.72a.75.75 0 0 0 1.06 1.06l4.22-4.22v1.69a.75.75 0 0 0 1.5 0V1zM2.5 4v9a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V8.75a.75.75 0 0 1 1.5 0V13a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h4.25a.75.75 0 0 1 0 1.5H3a.5.5 0 0 0-.5.5'
-                  clip-rule='evenodd'
-                />
+                <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
+                <g
+                  id='SVGRepo_tracerCarrier'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                ></g>
+                <g id='SVGRepo_iconCarrier'>
+                  <path
+                    fill='currentColor'
+                    d='M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z'
+                  ></path>
+                </g>
               </svg>
             </p>
             <Image
-              className=' h-36 w-60 rounded-lg overflow-hidden'
+              className='rounded-md overflow-hidden h-44 sm:h-40'
               src={project.image}
               alt={project.name}
               height={600}
@@ -78,68 +86,59 @@ export default function Projects() {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      href='https://github.com/prajwl-dh?tab=repositories'
+      href={'https://github.com/prajwl-dh?tab=repositories'}
       target='_blank'
       key={uuidv4()}
     >
       <div
-        className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-50 dark:border-yellow-50 rounded-lg shadow-2xl h-full transition-all hover:scale-105 overflow-hidden justify-center text-center`}
+        className={`flex flex-col text font-bold bg-white dark:bg-neutral-700 bg-opacity-50 dark:border-yellow-50 rounded-md shadow-2xl h-full transition-all hover:scale-105 overflow-hidden group`}
       >
-        <div className='text font-bold text-3xl mb-5 pt-5 flex flex-col items-center'>
-          <q>View more on Github</q>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            width='32'
-            height='32'
-            viewBox='0 0 16 16'
-          >
-            <path
-              fill='currentColor'
-              fill-rule='evenodd'
-              d='M10.75 1a.75.75 0 0 0 0 1.5h1.69L8.22 6.72a.75.75 0 0 0 1.06 1.06l4.22-4.22v1.69a.75.75 0 0 0 1.5 0V1zM2.5 4v9a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V8.75a.75.75 0 0 1 1.5 0V13a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h4.25a.75.75 0 0 1 0 1.5H3a.5.5 0 0 0-.5.5'
-              clip-rule='evenodd'
-            />
-          </svg>
+        <div className='flex flex-row justify-between items-center gap-5 p-5'>
+          <p className='text font-bold text-3xl inline-block'>
+            GitHub
+            <svg
+              height={20}
+              width={20}
+              viewBox='0 0 16 16'
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              className='inline-block ml-2'
+            >
+              <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
+              <g
+                id='SVGRepo_tracerCarrier'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+              ></g>
+              <g id='SVGRepo_iconCarrier'>
+                <path
+                  fill='currentColor'
+                  d='M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z'
+                ></path>
+              </g>
+            </svg>
+          </p>
+          <Image
+            className='rounded-md overflow-hidden h-44 sm:h-40'
+            src={'/GitHub.png'}
+            alt={'Github Logo'}
+            height={600}
+            width={400}
+            priority
+          />
         </div>
-        <div className='flex flex-row justify-center'>
-          <button className='h-14 w-40 md:w-60 bg-gray-700 dark:bg-yellow-50 text text-[#fffffc] dark:text-gray-700 font-bold text-2xl outline-none rounded-lg text-center p-3 mb-5'>
-            Click Here
-          </button>
-        </div>
-      </div>
-    </motion.a>
-  );
-
-  const contactMe = (
-    <motion.a
-      initial={{ opacity: 0, y: 10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2, type: 'spring' }}
-      onClick={() => router.push('/contact')}
-      key={uuidv4()}
-      className='mt-2 sm:mt-0'
-    >
-      <div
-        className={`flex flex-col text font-bold bg-white bg-opacity-50 dark:bg-neutral-700 dark:border-yellow-50 rounded-lg shadow-2xl h-full transition-all hover:scale-105 overflow-hidden justify-center text-center cursor-pointer`}
-      >
-        <div className='text font-bold text-3xl mb-5 pt-5'>
-          <q>Contact Me</q>
-        </div>
-        <div className='flex flex-row justify-center'>
-          <motion.button className='h-14 w-40 md:w-60 bg-gray-700 dark:bg-yellow-50 text text-[#fffffc] dark:text-gray-700 font-bold text-2xl outline-none rounded-lg text-center p-3 mb-5'>
-            Click Here
-          </motion.button>
-        </div>
+        <p className='text text-ellipsis px-5 pb-5'>
+          Feel free to check out more of my projects on GitHub!
+        </p>
       </div>
     </motion.a>
   );
 
   allProjects.push(moreOnGithub);
-  allProjects.push(contactMe);
 
   return (
     <>
-      <div className='w-full md:w-9/12 md:max-w-screen-xl self-center flex flex-col p-5 mt-[100px] md:p-0 mb-10'>
+      <div className='w-full md:w-10/12 md:max-w-screen-xl self-center flex flex-col p-5 mt-[100px] md:p-0 mb-10'>
         <motion.p
           initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -202,7 +201,7 @@ export default function Projects() {
               Clear Filter
             </button>
           </motion.div>
-          <div className='mt-0 md:mt-10 w-full p-5 md:p-0 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 text-gray-600 dark:text-yellow-50 gap-10'>
+          <div className='mt-0 md:mt-10 w-full p-5 md:p-0 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 text-gray-600 dark:text-yellow-50 gap-10'>
             {allProjects}
           </div>
         </div>

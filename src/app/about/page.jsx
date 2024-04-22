@@ -23,7 +23,7 @@ export default function About() {
 
   return (
     <>
-      <div className='w-full md:w-9/12 lg:max-w-screen-xl self-center'>
+      <div className='w-full md:w-10/12 lg:max-w-screen-xl self-center'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-10 text text-gray-500 dark:text-yellow-50 text-md md:text-lg p-5 mb-10 mt-[100px] md:p-0'>
           {AboutMe()}
           {Education()}
