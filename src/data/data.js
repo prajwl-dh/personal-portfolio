@@ -110,6 +110,14 @@ const githubProjects = [
     description:
       'E-commerce platform for sports goods with real-time product management system.',
   },
+  {
+    name: 'Stopwatch',
+    type: 'web',
+    link: 'https://github.com/prajwl-dh/stopwatch-nextjs',
+    image: '/stopwatch.png',
+    description:
+      'A stopwatch web app created using React, Next JS, and Tailwind CSS',
+  },
 ];
 
 export default githubProjects;
