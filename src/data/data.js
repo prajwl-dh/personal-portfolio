@@ -66,10 +66,10 @@ const githubProjects = [
   {
     name: 'Tic Tac Toe',
     type: 'game',
-    link: 'https://github.com/prajwl-dh/ticTacToe',
+    link: 'https://github.com/prajwl-dh/tic-tac-toe-react',
     image: '/ticTacToeScreenshot.png',
     description:
-      'Java GUI Tic Tac Toe game with a challenging minimax algorithm bot.',
+      'Two player classic tic-tac-toe game using React and TailwindCSS',
   },
   {
     name: 'Shape Detector',
