@@ -37,7 +37,7 @@ function Images() {
         priority
       />
       <Image
-        className='p-10 md:p-0 w-fit h-fit stroke hidden dark:block'
+        className='hidden p-10 md:p-0 w-fit h-fit stroke dark:block'
         src={'/landingDark.svg'}
         alt=''
         height={800}
@@ -50,14 +50,13 @@ function Images() {
 
 function Intro(router) {
   return (
-    <div className='flex flex-col order-last md:-order-none place-self-center relative md:top-10 text-center md:text-start'>
-      <p className='text text-gray-500 dark:text-yellow-50 text-xl'>Hello,</p>
-      <p className='text text-gray-700 dark:text-yellow-50 text-2xl sm:text-3xl font-bold mt-3'>
+    <div className='relative flex flex-col order-last text-center md:-order-none place-self-center md:top-10 md:text-start'>
+      <p className='text-xl text-gray-500 text dark:text-yellow-50'>Hello,</p>
+      <p className='mt-3 text-2xl font-bold text-gray-700 text dark:text-yellow-50 sm:text-3xl'>
         I&apos;m Prajwal Dhungana
       </p>
-      <p className='text text-gray-600 dark:text-yellow-50 text-lg mt-3'>
-        Frontend Engineer | Open Source Contributor | MERN Specialist |
-        Full-Stack Skills with Node.js and Next.js
+      <p className='mt-3 text-lg text-gray-600 text dark:text-yellow-50'>
+        Full Stack Developer | Open Source Contributor
       </p>
       <motion.button
         whileHover={{ scale: 1.05 }}
@@ -69,7 +68,7 @@ function Intro(router) {
       >
         About Me
       </motion.button>
-      <div className='self-center md:self-start -mt-4'>
+      <div className='self-center -mt-4 md:self-start'>
         <SocialIcons />
       </div>
     </div>

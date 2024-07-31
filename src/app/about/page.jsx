@@ -23,7 +23,7 @@ export default function About() {
 
   return (
     <>
-      <div className='w-full md:w-10/12 lg:max-w-screen-xl self-center'>
+      <div className='self-center w-full md:w-10/12 lg:max-w-screen-xl'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-10 text text-gray-500 dark:text-yellow-50 text-md md:text-lg p-5 mb-10 mt-[100px] md:p-0'>
           {AboutMe()}
           {Education()}
@@ -44,9 +44,9 @@ function MyProjects(router) {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      className='text font-bold text-start p-5 bg-white dark:bg-neutral-700 bg-opacity-50 rounded-lg shadow-2xl cursor-pointer'
+      className='p-5 font-bold bg-white bg-opacity-50 rounded-lg shadow-2xl cursor-pointer text text-start dark:bg-neutral-700'
     >
-      <span className='text text-blue-500 text-xl'>My Projects : </span>
+      <span className='text-xl text-blue-500 text'>My Projects : </span>
       <br />
       <br />
       <span className='flex flex-row justify-center'>
@@ -71,15 +71,15 @@ function Engagements() {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      className='text font-bold text-start p-5 bg-white dark:bg-neutral-700 bg-opacity-50 rounded-lg shadow-2xl'
+      className='p-5 font-bold bg-white bg-opacity-50 rounded-lg shadow-2xl text text-start dark:bg-neutral-700'
     >
-      <span className='text text-blue-500 text-xl'>Engagements & Hobbies:</span>
+      <span className='text-xl text-blue-500 text'>Engagements & Hobbies:</span>
       <br />
       <br />
-      <span className='text text-red-400'>Sports: </span>Soccer, Table Tennis,
+      <span className='text-red-400 text'>Sports: </span>Soccer, Table Tennis,
       Swimming
       <br />
-      <span className='text text-red-400'>Soft skills: </span>Public speaking,
+      <span className='text-red-400 text'>Soft skills: </span>Public speaking,
       Communication, Leadership, Teamwork, Collaboration
       <br />
     </motion.span>
@@ -103,14 +103,14 @@ function Skills() {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      className='text font-bold text-start p-5 bg-white dark:bg-neutral-700 bg-opacity-50 rounded-lg shadow-2xl lg:col-span-2'
+      className='p-5 font-bold bg-white bg-opacity-50 rounded-lg shadow-2xl text text-start dark:bg-neutral-700 lg:col-span-2'
     >
-      <span className='text text-blue-500 text-xl'>Skills:</span>
+      <span className='text-xl text-blue-500 text'>Skills:</span>
       <br />
       <br />
       <img
         className='w-full'
-        src={`https://skillicons.dev/icons?i=html,js,ts,css,tailwind,react,redux,express,nodejs,nextjs,figma,materialui,ps,git,github,postgres,mongodb,sqlite,mysql,firebase,gcp,aws,azure,postman,jest,jquery,php,wordpress,bootstrap,regex,npm,vite,webpack,nginx,docker,go,graphql,jenkins,java,c,py,arduino,opencv,tensorflow,raspberrypi,linux,bash,redhat,vscode,atom,arch,mint,ubuntu,debian,apple,windows${
+        src={`https://skillicons.dev/icons?i=html,js,ts,css,tailwind,angular,react,redux,express,nodejs,nextjs,figma,materialui,ps,git,github,postgres,mongodb,sqlite,mysql,firebase,gcp,aws,azure,postman,jest,jquery,php,wordpress,bootstrap,regex,npm,vite,webpack,nginx,docker,go,graphql,jenkins,java,c,py,arduino,opencv,tensorflow,raspberrypi,linux,bash,redhat,vscode,atom,arch,mint,ubuntu,debian,apple,windows${
           perline ? `&perline=${perline}` : ''
         }`}
         alt='skills icons'
@@ -126,13 +126,13 @@ function Education() {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      className='text font-bold text-start p-5 bg-white dark:bg-neutral-700 bg-opacity-50 rounded-lg shadow-2xl'
+      className='p-5 font-bold bg-white bg-opacity-50 rounded-lg shadow-2xl text text-start dark:bg-neutral-700'
     >
-      <span className='text text-blue-500 text-xl'>
+      <span className='text-xl text-blue-500 text'>
         Education : <br />
         <br />
       </span>
-      <span className='text italic text-red-400'>
+      <span className='italic text-red-400 text'>
         Bachelors In Computer Science
       </span>
       <br />
@@ -142,7 +142,7 @@ function Education() {
       Louisiana
       <br />
       <br />
-      <span className='text text-red-400'>At McNeese: </span>Web development,
+      <span className='text-red-400 text'>At McNeese: </span>Web development,
       Robotics, Programming, Software Engineering
     </motion.span>
   );
@@ -154,13 +154,13 @@ function AboutMe() {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, type: 'spring' }}
-      className='text font-bold text-start p-5 bg-white dark:bg-neutral-700 bg-opacity-50 rounded-lg shadow-2xl'
+      className='p-5 font-bold bg-white bg-opacity-50 rounded-lg shadow-2xl text text-start dark:bg-neutral-700'
     >
-      <span className='text font-bold text-xl'>Hi!</span>
+      <span className='text-xl font-bold text'>Hi!</span>
       <br />
       <br /> I&#39;m{' '}
-      <span className='text text-blue-500'>Prajwal Dhungana</span>, a passionate{' '}
-      <span className='text text-red-400'>Frontend Engineer</span> deeply
+      <span className='text-blue-500 text'>Prajwal Dhungana</span>, a passionate{' '}
+      <span className='text-red-400 text'>Full Stack Developer</span> deeply
       engaged in the dynamic world of modern web development with a strong
       foundation in the MERN stack, alongside Next.js and Tailwind CSS.
       <br />
